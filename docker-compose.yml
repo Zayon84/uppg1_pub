@@ -1,0 +1,31 @@
+version: '3.4'
+
+services:
+  uppg1_pub.server:
+    image: ${DOCKER_REGISTRY-}uppg1pubserver
+    build:
+      context: .
+      dockerfile: uppg1_pub/Server/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIROMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - ConnectionStrings__defaultconnectstring=Host=postgres;Port=5432;Username=postgres;Password=postgres;Database=uppg1_pubDB;
+
+
+  postgres:
+     image: postgres:latest
+     container_name: postgres
+     environment:
+       - POSTGRES_USER=postgres
+       - POSTGRES_PASSWORD=postgres
+       - POSTGRES_DB=uppg1_pubDB
+     ports:
+       - 5432:5432
+     restart: always
+     volumes:
+       - pgsql_data:/var/lib/postgresql/data
+  
+  
+
+volumes:
+  pgsql_data:
