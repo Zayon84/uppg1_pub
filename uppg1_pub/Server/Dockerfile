@@ -8,7 +8,7 @@ FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 COPY ["Server/uppg1_pub.Server.csproj", "Server/"]	# removed uppg1_pub/  for devops
 COPY ["Client/uppg1_pub.Client.csproj", "Client/"]
-COPY ["Shared/uppg1_pub.Shared.csproj", "Shared/"]
+#COPY ["Shared/uppg1_pub.Shared.csproj", "Shared/"]
 RUN dotnet restore "Server/uppg1_pub.Server.csproj"
 COPY . .
 WORKDIR "/src/uppg1_pub/Server"
