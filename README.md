@@ -11,7 +11,10 @@ För detta projekt valde jag att använda **.Net Core** med **Blazor WebAssebly*
 
 ### Vad har jag gjort för project?
 
-Då det inte var focus på koden gjorde jag bara en simple Webapp som gör en lista med Spel, med **3 endpoints**
+Då det inte var focus på koden gjorde jag bara en simple Webapp om spel som har två listor. En med Spel som man kan lägga till spel med id, namn och genre id, 
+samt en lista med genre där man lägga till id med ny genre och genre via **3 endpoints**:
+
+Då det inte var focus på koden gjorde jag bara en simple Webapp som har en lista med Spel som man kan lägga till spel med id, namn och genre id, samt en lista med genre där man lägga till ny genre med id och genre via **3 endpoints**:
 - /games
 - /genre
 - /games/genre/{id:int}
