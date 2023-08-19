@@ -7,15 +7,20 @@ hjälp av Docker och Docker Compose.
 
 
 ### Vad har jag gjort för project?
-För detta projekt valde jag att använda .Net Core med Blazor WebAssebly.
+För detta projekt valde jag att använda .Net Core med Blazor WebAssebly och använt PostgreSQL som databas.
 
 Då det inte var focus på koden gjorde jag bara en simple Webapp som gör en lista med Spel, med 3 endpoints
 - /games
 - /genre
 - /games/genre/{id:int}
 
-Dock 5 st Api request där man kan Post and Get både Spel och Genre, samt få ut alla spel med en specefik genre.
+Dock 5 st Api request där man kan Post and Get både Spel och Genre, samt få ut alla spel med en specefik genre via id.
 
+### Docker
+Jag 
+
+### DB
+För att 
 
 
 
