@@ -5,9 +5,11 @@
 Utveckla och implementera en skalbar webbapplikation på Azure med
 hjälp av Docker och Docker Compose. 
 
+### Ramverk
+För detta projekt valde jag att använda .Net Core med Blazor WebAssebly och använt PostgreSQL som databas.
+**Github** används som versionskontroll och Deplayat på Azure DevOps
 
 ### Vad har jag gjort för project?
-För detta projekt valde jag att använda .Net Core med Blazor WebAssebly och använt PostgreSQL som databas.
 
 Då det inte var focus på koden gjorde jag bara en simple Webapp som gör en lista med Spel, med 3 endpoints
 - /games
