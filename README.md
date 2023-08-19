@@ -17,10 +17,16 @@ Då det inte var focus på koden gjorde jag bara en simple Webapp som gör en li
 Dock 5 st Api request där man kan Post and Get både Spel och Genre, samt få ut alla spel med en specefik genre via id.
 
 ### Docker
-Jag 
+För att implementera docker till projektet var det bara att högerklicka på server-delen och add **Container Orchestor Support**.
 
-### DB
-För att 
+Dem viktiga filerna som man fick var **Dockerfile** som log under server delen och **docker-compose** som kom i en egen folder.
+
+### DB - PostgreSql
+För att få tillgång till min databas använde jag NuGet Packages:
+- Npgsql.EntityFrameworkCore.PostgreSQL
+- EFCore.NamingConventions
+
+Första är för att få tillgång till databasen den andra hjälper till med att formatera om stringar på namn för att inte få strul
 
 
 
