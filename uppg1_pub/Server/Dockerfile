@@ -6,10 +6,10 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["uppg1_pub/Server/uppg1_pub.Server.csproj", "uppg1_pub/Server/"]
-COPY ["uppg1_pub/Client/uppg1_pub.Client.csproj", "uppg1_pub/Client/"]
-COPY ["uppg1_pub/Shared/uppg1_pub.Shared.csproj", "uppg1_pub/Shared/"]
-RUN dotnet restore "uppg1_pub/Server/uppg1_pub.Server.csproj"
+COPY ["Server/uppg1_pub.Server.csproj", "Server/"]	# removed uppg1_pub/  for devops
+COPY ["Client/uppg1_pub.Client.csproj", "Client/"]
+COPY ["Shared/uppg1_pub.Shared.csproj", "Shared/"]
+RUN dotnet restore "Server/uppg1_pub.Server.csproj"
 COPY . .
 WORKDIR "/src/uppg1_pub/Server"
 RUN dotnet build "uppg1_pub.Server.csproj" -c Release -o /app/build

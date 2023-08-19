@@ -10,7 +10,8 @@ services:
       - ASPNETCORE_ENVIROMENT=Development
       - ASPNETCORE_URLS=http://+:80
       - ConnectionStrings__defaultconnectstring=Host=postgres;Port=5432;Username=postgres;Password=postgres;Database=uppg1_pubDB;
-
+    ports:
+      - 80:80 
 
   postgres:
      image: postgres:latest
