@@ -18,7 +18,7 @@ Då det inte var focus på koden gjorde jag bara en simple Webapp som gör en li
 
 Dock 5 st **Api request** där man kan **Post** and **Get** både Spel och Genre, samt få ut alla spel med en specefik genre via id.
 
-Via Post man kan man 
+Via Postman är alla Api calls testade och fungerar. 
 
 ### Docker
 För att implementera **docker** till projektet var det bara att högerklicka på server-delen och add **Container Orchestor Support**.
@@ -42,10 +42,14 @@ För att få tillgång till min databas använde jag NuGet Packages:
 
 Första är för att få tillgång till databasen den andra hjälper till med att formatera om stringar på namn för att inte få strul
 
+### Autoscalning
+För att appen skall klara belastning så kör jag att webappen har custom autoscale, jag lagt på att vid över 70% Cpu användning ökar den och under 30 minskar den med 1 minimum och max 5.  
+
+![image](https://github.com/Zayon84/uppg1_pub/assets/12381993/d62bdcdf-664b-4694-9ef4-c30e0023f415)
 
 
 
 
-1.	Beskriv docker
-2.	Hur man testar
-3.	Tekniska val :
+
+
+
