@@ -12,9 +12,9 @@ För detta projekt valde jag att använda **.Net Core** med **Blazor WebAssebly*
 ### Vad har jag gjort för project?
 
 Då det inte var focus på koden gjorde jag bara en simple Webapp om spel som har två listor. En med Spel som man kan lägga till spel med id, namn och genre id, 
-samt en lista med genre där man lägga till id med ny genre och genre via **3 endpoints**:
+samt en lista med genre där man lägga till id med ny genre. 
 
-Då det inte var focus på koden gjorde jag bara en simple Webapp som har en lista med Spel som man kan lägga till spel med id, namn och genre id, samt en lista med genre där man lägga till ny genre med id och genre via **3 endpoints**:
+via **3 endpoints**:
 - /games
 - /genre
 - /games/genre/{id:int}
@@ -45,13 +45,26 @@ För att få tillgång till min databas använde jag NuGet Packages:
 
 Första är för att få tillgång till databasen den andra hjälper till med att formatera om stringar på namn för att inte få strul
 
+### Azure Portal
+För att implementera projekt på **Azure** är man tvungen att ha en **Resource groups** och för att hosta sidan skapar man resursen **Web app**, då man skapade web app fick man skapa en **Service plan**, so  
+
+För att implementera projekt på **Azure** är man tvungen att ha 1 Resource group med 2 resources:
+- **Resource group** 
+  - **Web app**: för att hosta sidan
+  - **Service plan**: kommer när man skapade "web app" för dess settings
+
 ### Autoscalning
 För att appen skall klara belastning så kör jag att webappen har custom autoscale, jag lagt på att vid över 70% Cpu användning ökar den och under 30 minskar den med 1 minimum och max 5.  
 
 ![image](https://github.com/Zayon84/uppg1_pub/assets/12381993/d62bdcdf-664b-4694-9ef4-c30e0023f415)
 
+### DevOps
+**CI**: Först fick man skapa en Artifact som tar koden till fungerande sida 
+![image](https://github.com/Zayon84/uppg1_pub/assets/12381993/16b1c86d-4efc-4018-8478-6398027afcc6)
 
-
+**CD**: Tar man den fungerade sidan till att deploya till en sida
+![image](https://github.com/Zayon84/uppg1_pub/assets/12381993/7812e797-f7d6-47db-962e-d2cc1ec9fb5d)
+![image](https://github.com/Zayon84/uppg1_pub/assets/12381993/4d49f0b0-760c-4ce3-88d2-87d4944c90e3)
 
 
 
