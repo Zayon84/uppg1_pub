@@ -38,6 +38,11 @@ För att ladda upp image till **Docker Desktop** och skapa min Container använd
 
 >docker compose up -d
 
+Docker Desktop container:
+
+![60a336d3-e542-41c0-99c5-604c0f6fc47d](https://github.com/Zayon84/uppg1_pub/assets/12381993/44fc774c-5a9e-4e74-8c50-2c8f78d56743)
+
+
 ### DB - PostgreSql
 För att få tillgång till min databas använde jag NuGet Packages:
 - Npgsql.EntityFrameworkCore.PostgreSQL
