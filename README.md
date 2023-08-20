@@ -6,7 +6,7 @@ Utveckla och implementera en skalbar webbapplikation på Azure med
 hjälp av Docker och Docker Compose. 
 
 ### Ramverk
-För detta projekt valde jag att använda **.Net Core** med **Blazor WebAssebly** och använt **PostgreSQL** som databas.
+För detta projekt valde jag att använda **.Net Core** med **Blazor WebAssembly** och använt **PostgreSQL** som databas.
 **Github** används som versionskontroll och Deployat på **Azure DevOps**.
 
 ### Vad har jag gjort för project?
